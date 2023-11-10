@@ -46,7 +46,7 @@ align-items: center;
 text-align: center;
 }
 .Dowload{
-background-color: rgb(9, 166, 189);
+background-color: rgb(0, 182, 209);
 height: 34px;
 border: 1px none;
 border-radius: 15px;
@@ -54,6 +54,13 @@ padding: 12px 20px;
 color: white;
 font-size: 24px;
 font-weight: bold;
+}
+.Dowload:hover{
+    background-color: rgb(0, 137, 158);
+}
+.Dowload a{
+    text-decoration: none;
+    color: white;
 }
 .dwldbox{
 display: flex;
@@ -73,7 +80,51 @@ cursor: pointer;
 height: 67px;
 padding: 0px 26px;
 }
-.grids{
+.container{
     display: grid;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-rows: repeat(5,236px);
+    grid-template-columns: repeat(3,1fr);
+    font-family: "Segoe UI";
+    justify-content: center;
+    border: 1px none;
+    margin: 0px 50px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.d32{
+    border: 1px none ;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(11, 207, 255);
+    margin: 0px 10px 0px 0px;
+}
+.d64{
+    border: 1px none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(120, 186, 119);
+}
+.items span a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.dwld{
+    margin: 30px 0px;
+}
+.maintxt{
+    font-size: 30px;
+    font-weight: 700;
+}
+.comtxt{
+    margin: 0px;
+    padding: 0px;
+}
+.dwld .d32:hover{
+    background-color: rgb(6, 121, 138);
+}
+.dwld .d64:hover{
+    background-color: rgb(153, 237, 152);
 }
