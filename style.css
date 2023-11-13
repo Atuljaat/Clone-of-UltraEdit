@@ -82,7 +82,7 @@ padding: 0px 26px;
 }
 .container{
     display: grid;
-    grid-template-rows: repeat(5,236px);
+    grid-template-rows: repeat(4,236px);
     grid-template-columns: repeat(3,1fr);
     font-family: "Segoe UI";
     justify-content: center;
@@ -128,7 +128,40 @@ padding: 0px 26px;
 .dwld .d64:hover{
     background-color: rgb(153, 237, 152);
 }
-@media only screen and (max-width:600px){
+.joincontain{
+    border: 1px none;
+    width: auto;
+    height: 900px;
+    background-color: rgb(34, 34, 34);
+    margin: 40px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.joininfo{
+    color: white;
+    font-size: 30px;
+}
+.smoltxt{
+    border: 2px solid greenyellow;
+    width: 36vw;
+}
+.form{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: white;
+}
+.form h3{
+    color:rgb(0, 182, 209);
+}
+.form .email{
+    margin: 10px 10px;
+    
+}
+
+@media only screen and (max-width:20px){
     *{
         margin: 0px;
         padding: 0px;
