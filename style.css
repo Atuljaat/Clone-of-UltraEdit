@@ -130,20 +130,26 @@ padding: 0px 26px;
 }
 .joincontain{
     border: 1px none;
-    width: auto;
-    height: 900px;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(34, 34, 34);
-    margin: 40px 0px;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;  
+    /*grid-template-rows: 1fr 1fr ;
     align-items: center;
+    justify-items: center; */
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "info sub"
+                        "ques ques" ;
+border-radius: 15px;
+grid-gap: 0px;
 }
 .joininfo{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    grid-area: info;
 }
 .smoltxt{
-    border: 2px solid greenyellow;
     width: 36vw;
 }
 .form{
@@ -152,13 +158,80 @@ padding: 0px 26px;
     padding: 40px;
     border-radius: 25px;
     background-color: white;
+    grid-area: sub;
 }
 .form h3{
     color:rgb(0, 182, 209);
 }
 .form .email{
     margin: 10px 10px;
-    
+}
+.sub{
+    font-size: 2em;
+    font-weight: 600;
+}
+input{
+    width: 22em;
+    height: 4em;
+    margin: 1em 0px;
+}
+.ques{
+    color: white;
+    grid-area: ques;
+    font-size: 1.5em;
+}
+.bottom{
+display: grid;
+ grid-template-areas: "lang usr gen subs"
+            "lang usr gen subs";
+            gap: 4em;
+            justify-content: center;
+
+ } 
+.language{
+    grid-area: lang;
+}
+.user{
+    grid-area: usr;
+}
+.gen{
+    grid-area: gen;
+}
+.formss{
+    grid-area: subs
+}
+.font{
+    font-size: 1.2em;
+}
+.font li{
+    cursor: pointer;
+    list-style: none;
+}
+button{
+    height: 2em;
+    width: 10em;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: cyan;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.botbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.right svg{
+    height: 2em;
+    width: auto;
+    margin: 0px 5px;
+}
+svg:hover{
+    cursor: pointer;
+    background-color: rgba(187, 172, 172, 0.719);
+    height: 2.2em;
 }
 
 @media only screen and (max-width:20px){
