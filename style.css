@@ -131,7 +131,7 @@ padding: 0px 26px;
 .joincontain{
     border: 1px none;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: rgb(34, 34, 34);
     display: grid;  
     /*grid-template-rows: 1fr 1fr ;
@@ -143,6 +143,7 @@ padding: 0px 26px;
                         "ques ques" ;
 border-radius: 15px;
 grid-gap: 0px;
+padding: 10px;
 }
 .joininfo{
     color: white;
