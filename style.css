@@ -130,7 +130,7 @@ padding: 0px 26px;
 }
 .joincontain{
     border: 1px none;
-    width: 100vw;
+    width: 97vw;
     height: auto;
     background-color: rgb(34, 34, 34);
     display: grid;  
@@ -143,7 +143,7 @@ padding: 0px 26px;
                         "ques ques" ;
 border-radius: 15px;
 grid-gap: 0px;
-padding: 10px;
+padding: 9px;
 }
 .joininfo{
     color: white;
@@ -202,7 +202,7 @@ display: grid;
     grid-area: subs
 }
 .font{
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 .font li{
     cursor: pointer;
